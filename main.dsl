@@ -66,7 +66,24 @@ start node entry_point
 {
     do
     {
-        
+
+    }
+}
+
+// Transitions
+
+// They describe conditions of choosing the next node. 
+start node myTransitionNode 
+{
+    do
+    {
+        // triggers waiting mode
+        wait *.;
+    }
+    transitions
+    {
+        // Declaration of transition "transitionName" to node "nodeName" triggered by condition "myCondition".
+        transitionName: goto nodeName on myCondition;
     }
 }
 
