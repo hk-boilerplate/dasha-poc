@@ -13,5 +13,19 @@ context {
 }
 
 // Conversation context
-
 // above are set of variables, that we may use during the conversation
+
+node myNode {
+    do 
+    {
+        /// a section describing actions performed in this node
+    }
+    transitions 
+    {
+        /// a section describing transition to subsequent nodes
+    }
+    onexit 
+    {
+        /// an optional section describing the actions performed when exiting the node
+    }
+}
