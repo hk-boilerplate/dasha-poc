@@ -57,3 +57,16 @@ start node myLatestNode
     }
 }
 
+// Dialogue entry point
+
+// Every dialog must contain a node marked with the start keyword. This node will be an
+// entry point of your dialogue, just like the main function in other programming languages
+
+start node entry_point 
+{
+    do
+    {
+        
+    }
+}
+
