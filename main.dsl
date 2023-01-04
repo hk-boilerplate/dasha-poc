@@ -29,3 +29,31 @@ node myNode {
         /// an optional section describing the actions performed when exiting the node
     }
 }
+
+// Local data can be accessed only within the scope in which it is declared. Like context data, local data is 
+// statically typed
+
+// Local data is not shared between executable sections of the node
+// For example you cannot access the data declared in do section from the onexit section of the same node
+
+// Lifetime
+// At runtime, when entering the executable section(for example, do section), an isolated scope containing local 
+// data is created. When the section's execution ends, the scope will be cancelled, and its local data will be deleted
+
+start node myLatestNode 
+{
+    do 
+    {
+        // Declare local variable
+        var foo: number = 0;
+        var bar = "Hello";
+        // Read from local variable
+        // Expected output: "Hello"
+        #log(bar)
+    }
+    transitions
+    {
+        
+    }
+}
+
