@@ -1,0 +1,26 @@
+{
+  "name": "dasha-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hk-boilerplate/dasha-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hk-boilerplate/dasha-poc/issues"
+  },
+  "homepage": "https://github.com/hk-boilerplate/dasha-poc#readme",
+  "dependencies": {
+    "@dasha.ai/sdk": "^0.10.1"
+  },
+  "devDependencies": {
+    "@dasha.ai/cli": "^0.6.2",
+    "prettier": "^2.8.1"
+  }
+}
