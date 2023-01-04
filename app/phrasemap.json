@@ -1,0 +1,24 @@
+{
+  "default": {
+    "voiceInfo": {
+      "lang": "en-US",
+      "speaker": "default",
+      "speed": 1
+    },
+
+    "phrases": {
+      "greeting": {
+        "first": [
+          {
+            "text": "Hello ! Thank your for calling my poc application. My name is poc application. I will be your artificially intelligent agent today. How can i help you?"
+          }
+        ],
+        "repeat": [
+            {
+                "text": "I was just saying, How can i help you ?"
+            }
+        ]
+      }
+    }
+  }
+}
