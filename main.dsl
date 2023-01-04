@@ -87,3 +87,20 @@ start node myTransitionNode
     }
 }
 
+// Transition on event
+
+// The most common way to trigger transitions is by waiting for an event.
+// To decide which transition to trigger, an application checks the condition 
+// of every active transition in descending order of priorities until one of them is true. 
+
+node myNode
+{
+    do { wait *; }
+    transitions
+    {
+        tr: goto targetNode
+          on #messageHasSentiment("positive")
+          priority 100
+          tags: ontext;
+    }
+}
